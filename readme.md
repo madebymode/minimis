@@ -45,5 +45,6 @@ To keep your Sass clean:
 
 ```
 npm i --save-dev stylelint-config-property-sort-order-smacss
+cp node_modules/mode-sass/.editorconfig .editorconfig
 cp node_modules/mode-sass/.stylelintrc .stylelintrc
 ```
