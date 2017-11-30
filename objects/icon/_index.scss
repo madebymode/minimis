@@ -1,0 +1,82 @@
+/*doc
+---
+title: Icon
+name: icon
+category: Objects
+---
+<span class="todo">IMPORTANT:</span> When preparing SVGs:
+
+1. Remove every `fill` and `stroke` attribute that should inherit its color from CSS.
+2. Set `fill="none"` or `stroke="none"` anywhere a color should _not_ be applied.
+
+## Sass
+
+```scss
+// Basic
+@include o-icon();
+@include o-icon--size(70, 70);
+
+// Responsive
+@include o-icon('sm');
+@include o-icon--size(120, 120, 'sm');
+```
+
+## Markup
+
+### Basic
+
+```html_example
+<i class="o-icon  o-icon--mode-logo  o-icon--70x70">
+  <svg>
+    <use xlink:href="./img/svg/sprites/global.svg#mode-logo"></use>
+  </svg>
+</i>
+```
+
+### Responsive
+
+```html_example
+<i class="o-icon  o-icon--mode-logo  o-icon--70x70  o-icon--120x120@sm">
+  <svg>
+    <use xlink:href="./img/svg/sprites/global.svg#mode-logo"></use>
+  </svg>
+</i>
+```
+*/
+
+/**
+ * Icon object.
+ * @param  {String}  $at-breakpoint
+ */
+@mixin o-icon($at-breakpoint: null) {
+  @include breakpoints('o-icon', $at-breakpoint) {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+    background-size: contain;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+      stroke: currentColor;
+      pointer-events: none;
+    }
+  }
+}
+
+/**
+ * Icon size helper.
+ * @param  {Number}  $width
+ * @param  {Number}  $height
+ * @param  {String}  $at-breakpoint
+ */
+@mixin o-icon--size($width, $height, $at-breakpoint: null) {
+  $class-name: 'o-icon--#{$width}x#{$height}';
+  @include breakpoints($class-name, $at-breakpoint) {
+    width: $width * 1px;
+    height: $height * 1px;
+  }
+}

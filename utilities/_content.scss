@@ -1,0 +1,59 @@
+/*doc
+---
+title: Content
+name: content
+category: Utilities
+---
+## Sass
+
+```scss
+// Basic
+@include u-content-before('arrow-left', '« ');
+@include u-content-after('arrow-right', ' »');
+
+// Responsive
+@include u-content-before('arrow-left', '« ', 'sm');
+@include u-content-after('arrow-right', ' »', 'sm');
+```
+
+## Markup
+
+### Basic
+
+```html_example
+<div class="u-content-before-arrow-left  u-content-after-arrow-right">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</div>
+```
+
+### Responsive
+
+```html_example
+<div class="u-content-before-arrow-left@sm  u-content-after-arrow-right@sm">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</div>
+```
+*/
+
+/**
+ * Content utility.
+ * @param  {String}  $alias
+ * @param  {String}  $value
+ * @param  {String}  $at-breakpoint
+ */
+@mixin u-content-before($alias, $value, $at-breakpoint: null) {
+  $class-name: 'u-content-before-#{$alias}';
+  @include breakpoints($class-name, $at-breakpoint) {
+    &::before {
+      content: '#{$value}';
+    }
+  }
+}
+@mixin u-content-after($alias, $value, $at-breakpoint: null) {
+  $class-name: 'u-content-after-#{$alias}';
+  @include breakpoints($class-name, $at-breakpoint) {
+    &::after {
+      content: '#{$value}';
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/*doc
+---
+title: Display
+name: display
+category: Utilities
+---
+## Sass
+
+```scss
+// Basic
+@include u-display('block');
+@include u-visually-hidden();
+
+// Responsive
+@include u-display('block', 'sm');
+@include u-visually-hidden('sm');
+```
+
+## Markup
+
+### Basic
+
+```html_example
+<span class="u-display-block  /  u-background-color-gray-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+```
+
+### Responsive
+
+```html_example
+<span class="u-display-block@sm  /  u-background-color-gray-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+```
+*/
+
+/**
+ * Display utility.
+ * @param  {String}  $value
+ * @param  {String}  $at-breakpoint
+ */
+@mixin u-display($value, $at-breakpoint: null) {
+  $class-name: 'u-display-#{$value}';
+  @include breakpoints($class-name, $at-breakpoint) {
+    display: #{$value} !important;
+  }
+}
+
+// TODO: Should `visually-hidden` be an optional `display` value or stay separate?
+// @include u-display('visually-hidden');
+
+/**
+ * Visually hidden utility.
+ * @param  {String}  $at-breakpoint
+ */
+@mixin u-visually-hidden($at-breakpoint: null) {
+  $class-name: 'u-visually-hidden';
+  @include breakpoints($class-name, $at-breakpoint) {
+    @include visually-hidden();
+  }
+}

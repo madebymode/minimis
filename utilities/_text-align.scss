@@ -1,0 +1,39 @@
+/*doc
+---
+title: Text Align
+name: text-align
+category: Utilities
+---
+## Sass
+
+```scss
+// Basic
+@include u-text-align('center');
+
+// Responsive
+@include u-text-align('center', 'sm');
+```
+
+## Markup
+
+### Basic
+
+```html_example
+<p class="u-text-align-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
+
+### Responsive
+
+```html_example
+<p class="u-text-align-center@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
+*/
+
+/**
+ * Text-align utility.
+ * @param  {String}  $value
+ * @param  {String}  $at-breakpoint
+ */
+@mixin u-text-align($value, $at-breakpoint: null) {
+  @include u-property('text-align', $value, $value, $at-breakpoint);
+}

@@ -1,0 +1,19 @@
+/**
+ * Get full path to font file.
+ * @param  {String}  $path
+ * @return {String}
+ */
+$fonts-path: '/font' !default;
+@function font-url($path) {
+  @return url('#{$fonts-path}/#{$path}');
+}
+
+/**
+ * Get full path to image file.
+ * @param  {String}  $path
+ * @return {String}
+ */
+$images-path: '/img' !default;
+@function image-url($path) {
+  @return url('#{$images-path}/#{$path}');
+}

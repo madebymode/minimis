@@ -1,0 +1,112 @@
+// ------------------------------
+// Required Variables
+// ------------------------------
+
+$font-size: 16 !default; // Define in `settings/typography`
+
+
+
+// ------------------------------
+// Strings
+// ------------------------------
+
+/**
+ * Escape special characters in a selector.
+ * @param  {String}  $pixels
+ * @return {String}
+ */
+@function escape-selector($selector) {
+  $selector: to-string($selector);
+  $selector: str-replace($selector, '.', '\\.');
+  $selector: str-replace($selector, '%', '\\%');
+  $selector: str-replace($selector, '/', '\\\/');
+
+  // TODO: Invalid characters?
+  // $selector: str-replace($selector, '@', '\\@');
+  // $selector: str-replace($selector, '(', '\\(');
+  // $selector: str-replace($selector, ')', '\\)');
+
+  @return $selector;
+}
+
+
+
+// ------------------------------
+// Units
+// ------------------------------
+
+/**
+ * Remove the unit of a length
+ * @see http://hugogiraudel.com/2013/08/12/sass-functions/
+ * @param  {Number}  $value  Number to remove unit from
+ * @return {Number}          Unitless number
+ */
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+/**
+ * Convert px values (e.g. from a PSD) to ems.
+ * @see http://viljamis.com/blog/2013/prototyping-responsive-typography/
+ * @param  {Number}  $pixels
+ * @param  {Number}  $context  Defaults to $font-size
+ * @return {Number}            em value
+ */
+@function em($pixels, $context: $font-size) {
+  // Note: `strip-units` is what's causing the invalid multiplication errors. Possible to fix?
+  // @return strip-units($pixels) / strip-units($context) * 1em;
+  @return $pixels / $context * 1em;
+}
+
+/**
+ * Convert px values (e.g. from a PSD) to rems.
+ * @see http://viljamis.com/blog/2013/prototyping-responsive-typography/
+ * @param  {Number}  $pixels
+ * @return {Number}           rem value
+ */
+@function rem($pixels) {
+  // Note: `strip-units` is what's causing the invalid multiplication errors. Possible to fix?
+  // @return strip-units($pixels) / strip-units($font-size) * 1rem;
+  @return $pixels / $font-size * 1rem;
+}
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+/**
+ * Subtract 1px from breakpoint so min/max queries don't overlap.
+ * @todo Use 0.01em instead of 1px to avoid media query "void" when text zoom is on.
+ * @see https://github.com/sass-mq/sass-mq/issues/6
+ * @param  {Number}  $breakpoint
+ * @return {Number}
+ */
+@function get-max-width-breakpoint($breakpoint) {
+  @if type-of($breakpoint) != 'number' {
+    @error '"#{$breakpoint}" should be a number value.';
+  } @else if unit($breakpoint) == 'em' {
+    $breakpoint: $breakpoint - 0.0625em; // 1px = 1em / 16
+  } @else if unit($breakpoint) == 'px' {
+    $breakpoint: $breakpoint - 1px;
+  } @else {
+    @error '#{$breakpoint} should be either em or px.';
+  }
+
+  @return $breakpoint;
+}
+
+
+// ------------------------------
+// Typography
+// ------------------------------
+
+/**
+ * Convert tracking (e.g. from a PSD) to ems for letter-spacing.
+ * @param  {Number}  $tracking
+ * @return {Number}             em value
+ */
+@function tracking($tracking) {
+  @return ($tracking / 1000) * 1em;
+}
