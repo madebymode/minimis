@@ -52,7 +52,8 @@
 <h2>2. Copy starter kit</h2>
 <div class="codeBlock">
   <div class="highlight">
-    <pre>rsync -avz node_modules/minimis/starter-kit/ resources/assets/sass/</pre>
+    <pre>mkdir -p resources/assets/sass/
+rsync -avz node_modules/minimis/starter-kit/ resources/assets/sass/</pre>
   </div>
 </div>
 <h2>3. Build with <a class="styleguide" href="https://gulpjs.com/" title="https://gulpjs.com/">gulp</a></h2>
@@ -95,7 +96,7 @@ gulp.task('watch', function() {
 });</pre>
   </div>
 </div>
-<h2>4. Keep clean code with <a class="styleguide" href="http://editorconfig.org/" title="http://editorconfig.org/">EditorConfig</a> and <a class="styleguide" href="http://stylelint.io/" title="http://stylelint.io/">stylelint</a></h2>
+<h2>4. <small class="optional">Optional</small> Keep clean code with <a class="styleguide" href="http://editorconfig.org/" title="http://editorconfig.org/">EditorConfig</a> and <a class="styleguide" href="http://stylelint.io/" title="http://stylelint.io/">stylelint</a></h2>
 <div class="codeBlock">
   <div class="highlight">
     <pre>npm i stylelint-config-property-sort-order-smacss --save-dev
