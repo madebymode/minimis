@@ -22,7 +22,7 @@
 // Mixins to add custom (in)active properties to small caps fonts
 // Would be great if we could pass via `@content`:
 //   https://github.com/sass/sass/issues/1943#issuecomment-165912990
-// But it looks like we'll get something close by calling `@content` with arguments:
+// But it looks like we’ll get something close by calling `@content` with arguments:
 //   https://github.com/sass/sass/issues/871#issue-17401909
 @mixin u-small-caps--inactive {
   @content;

@@ -70,7 +70,7 @@ category: Objects
 /**
  * Video object element.
  * @see http://embedresponsively.com/
- * @note Since YouTube automatically letterboxes videos, we don't have to worry about aspect ratio or centering
+ * @note Since YouTube automatically letterboxes videos, we don’t have to worry about aspect ratio or centering
  * @param  {String}  $at-breakpoint
  */
 @mixin o-video__element($at-breakpoint: null) {
