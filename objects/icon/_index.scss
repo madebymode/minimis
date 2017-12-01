@@ -26,21 +26,17 @@ category: Objects
 ### Basic
 
 ```html_example
-<i class="o-icon  o-icon--mode-logo  o-icon--70x70">
-  <svg>
-    <use xlink:href="./img/svg/sprites/global.svg#mode-logo"></use>
-  </svg>
-</i>
+<span class="o-icon  o-icon--mode-logo  o-icon--70x70">
+  <svg><use xlink:href="./img/svg/sprites/global.svg#mode-logo"></use></svg>
+</span>
 ```
 
 ### Responsive
 
 ```html_example
-<i class="o-icon  o-icon--mode-logo  o-icon--70x70  o-icon--120x120@md">
-  <svg>
-    <use xlink:href="./img/svg/sprites/global.svg#mode-logo"></use>
-  </svg>
-</i>
+<span class="o-icon  o-icon--mode-logo  o-icon--70x70  o-icon--120x120@md">
+  <svg><use xlink:href="./img/svg/sprites/global.svg#mode-logo"></use></svg>
+</span>
 ```
 */
 
