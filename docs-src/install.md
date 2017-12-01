@@ -57,7 +57,7 @@ gulp.task('watch', function() {
 });
 ```
 
-## 4. Keep clean code with [EditorConfig](http://editorconfig.org/) and [stylelint](http://stylelint.io/)
+## 4. <small class="optional">Optional</small> Keep clean code with [EditorConfig](http://editorconfig.org/) and [stylelint](http://stylelint.io/)
 
 ```
 npm i stylelint-config-property-sort-order-smacss --save-dev
