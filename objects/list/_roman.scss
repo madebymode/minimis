@@ -11,7 +11,7 @@ category: Objects
 @include o-list--roman();
 
 // Responsive
-@include o-list--roman('sm');
+@include o-list--roman('md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ol class="o-list  o-list--roman@sm">
+<ol class="o-list  o-list--roman@md">
   <li class="o-list__item"><span class="o-list__counter"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item"><span class="o-list__counter"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item"><span class="o-list__counter"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>

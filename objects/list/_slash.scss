@@ -11,7 +11,7 @@ category: Objects
 @include o-list--slash();
 
 // Responsive
-@include o-list--slash('sm');
+@include o-list--slash('md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ul class="o-list  o-list--slash@sm">
+<ul class="o-list  o-list--slash@md">
   <li class="o-list__item">Lorem</li>
   <li class="o-list__item">Ipsum</li>
   <li class="o-list__item">Dolor</li>

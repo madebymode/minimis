@@ -13,7 +13,7 @@ category: Objects
 @include o-list--border('', 1px solid $color-gray-3);
 
 // Responsive
-@include o-list--border('', 1px solid $color-gray-3, 'sm');
+@include o-list--border('', 1px solid $color-gray-3, 'md');
 ```
 
 ## Markup
@@ -31,7 +31,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ul class="o-list  o-list--border@sm">
+<ul class="o-list  o-list--border@md">
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>

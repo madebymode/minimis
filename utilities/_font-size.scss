@@ -12,8 +12,8 @@ category: Utilities
 @include u-font-size('heading', 1.5rem);
 
 // Responsive
-@include u-font-size('100%', 100%, 'sm');
-@include u-font-size('heading', 1.5rem, 'sm');
+@include u-font-size('100%', 100%, 'md');
+@include u-font-size('heading', 1.5rem, 'md');
 ```
 
 ## Markup
@@ -28,8 +28,8 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<h4 class="u-font-size-100%@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-<p class="u-font-size-heading@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<h4 class="u-font-size-100%@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<p class="u-font-size-heading@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 */
 

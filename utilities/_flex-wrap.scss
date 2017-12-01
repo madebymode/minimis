@@ -11,7 +11,7 @@ category: Utilities
 @include u-flex-wrap('wrap');
 
 // Responsive
-@include u-flex-wrap('wrap', 'sm');
+@include u-flex-wrap('wrap', 'md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<div class="u-display-flex  /  u-flex-wrap-wrap@sm">
+<div class="u-display-flex  /  u-flex-wrap-wrap@md">
   <img src="http://placehold.it/300x100/ff0000/ffffff?text=1" width="300" height="100" alt="Item 1">
   <img src="http://placehold.it/300x100/00ff00/ffffff?text=2" width="300" height="100" alt="Item 2">
   <img src="http://placehold.it/300x100/0000ff/ffffff?text=3" width="300" height="100" alt="Item 3">

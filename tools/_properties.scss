@@ -14,7 +14,7 @@
 
 // Examples:
 
-// @include u-property('flex-wrap', 'nowrap', 'nowrap', 'sm');
+// @include u-property('flex-wrap', 'nowrap', 'nowrap', 'md');
 
 /**
  * Directional property utility.
@@ -65,4 +65,4 @@
 
 // Examples:
 
-// @include u-property-directional('border', 'top', 1px solid $color-gray-3, 'sm');
+// @include u-property-directional('border', 'top', 1px solid $color-gray-3, 'md');

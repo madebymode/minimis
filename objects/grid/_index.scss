@@ -12,7 +12,7 @@ category: Objects
 @include o-grid__item();
 
 // Responsive
-@include o-grid('sm');
+@include o-grid('md');
 ```
 
 ## Markup
@@ -29,9 +29,9 @@ category: Objects
 ### Responsive
 
 ```html_example
-<div class="o-grid@sm">
-  <p class="o-grid__item  /  u-width-1/1  u-width-1/2@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-  <p class="o-grid__item  /  u-width-1/1  u-width-1/2@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<div class="o-grid@md">
+  <p class="o-grid__item  /  u-width-1/1  u-width-1/2@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <p class="o-grid__item  /  u-width-1/1  u-width-1/2@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 </div>
 ```
 */

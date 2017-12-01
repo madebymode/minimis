@@ -12,7 +12,7 @@ category: Objects
 @include o-table__item();
 
 // Responsive
-@include o-table('sm');
+@include o-table('md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<div class="o-table@sm">
+<div class="o-table@md">
   <p class="o-table__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   <p class="o-table__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 </div>

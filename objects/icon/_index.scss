@@ -17,8 +17,8 @@ category: Objects
 @include o-icon--size(70, 70);
 
 // Responsive
-@include o-icon('sm');
-@include o-icon--size(120, 120, 'sm');
+@include o-icon('md');
+@include o-icon--size(120, 120, 'md');
 ```
 
 ## Markup
@@ -36,7 +36,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<i class="o-icon  o-icon--mode-logo  o-icon--70x70  o-icon--120x120@sm">
+<i class="o-icon  o-icon--mode-logo  o-icon--70x70  o-icon--120x120@md">
   <svg>
     <use xlink:href="./img/svg/sprites/global.svg#mode-logo"></use>
   </svg>

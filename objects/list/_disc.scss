@@ -11,7 +11,7 @@ category: Objects
 @include o-list--disc('', 1.125em);
 
 // Responsive
-@include o-list--disc('', 1.125em, 'sm');
+@include o-list--disc('', 1.125em, 'md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ul class="o-list  o-list--disc@sm">
+<ul class="o-list  o-list--disc@md">
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>

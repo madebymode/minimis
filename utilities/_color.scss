@@ -11,7 +11,7 @@ category: Utilities
 @include u-color('red-1', $color-red-1);
 
 // Responsive
-@include u-color('red-1', $color-red-1, 'sm');
+@include u-color('red-1', $color-red-1, 'md');
 ```
 
 ## Markup

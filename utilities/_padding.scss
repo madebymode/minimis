@@ -13,7 +13,7 @@ Directions: null, `vertical`, `horizontal`, `top`, `right`, `bottom`, `left`.
 @include u-padding('horizontal-sm', $gutter-sm);
 
 // Responsive
-@include u-padding('horizontal-sm', $gutter-sm, 'sm');
+@include u-padding('horizontal-sm', $gutter-sm, 'md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ Directions: null, `vertical`, `horizontal`, `top`, `right`, `bottom`, `left`.
 ### Responsive
 
 ```html_example
-<div class="u-padding-horizontal-sm@sm">
+<div class="u-padding-horizontal-sm@md">
   <img src="http://placehold.it/100/ff0000/ffffff?text=1" width="100" height="100" alt="Item 1">
 </div>
 ```

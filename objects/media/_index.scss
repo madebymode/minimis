@@ -14,7 +14,7 @@ category: Objects
 @include o-media__body();
 
 // Responsive
-@include o-media('sm');
+@include o-media('md');
 ```
 
 ## Markup
@@ -35,8 +35,8 @@ category: Objects
 ### Responsive
 
 ```html_example
-<div class="o-media@sm  /  u-align-items-center">
-  <figure class="o-media__figure  /  u-padding-right-sm@sm">
+<div class="o-media@md  /  u-align-items-center">
+  <figure class="o-media__figure  /  u-padding-right-sm@md">
     <img src="http://placehold.it/100/ff0000/ffffff?text=1" width="100" height="100" alt="Item 1">
   </figure>
   <p class="o-media__body">

@@ -11,7 +11,7 @@ category: Utilities
 @include u-pointer-events('none');
 
 // Responsive
-@include u-pointer-events('none', 'sm');
+@include u-pointer-events('none', 'md');
 ```
 
 ## Markup
@@ -27,7 +27,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<p class="u-pointer-events-none@sm">
+<p class="u-pointer-events-none@md">
   <a href="javascript:alert('Hello!');">Click me</a>
 </p>
 ```

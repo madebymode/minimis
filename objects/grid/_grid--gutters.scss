@@ -13,7 +13,7 @@ category: Objects
 @include o-grid--gutters('sm', $gutter-sm);
 
 // Responsive
-@include o-grid--gutters('sm', $gutter-sm, 'sm');
+@include o-grid--gutters('sm', $gutter-sm, 'md');
 ```
 
 ## Markup
@@ -30,7 +30,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<div class="o-grid  o-grid--gutters-sm@sm">
+<div class="o-grid  o-grid--gutters-sm@md">
   <p class="o-grid__item  /  u-width-1/2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   <p class="o-grid__item  /  u-width-1/2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 </div>

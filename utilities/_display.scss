@@ -12,8 +12,8 @@ category: Utilities
 @include u-visually-hidden();
 
 // Responsive
-@include u-display('block', 'sm');
-@include u-visually-hidden('sm');
+@include u-display('block', 'md');
+@include u-visually-hidden('md');
 ```
 
 ## Markup
@@ -27,7 +27,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<span class="u-display-block@sm  /  u-background-color-gray-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+<span class="u-display-block@md  /  u-background-color-gray-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 ```
 */
 

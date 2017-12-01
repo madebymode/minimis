@@ -12,7 +12,7 @@ category: Objects
 @include o-list__item();
 
 // Responsive
-@include o-list('sm');
+@include o-list('md');
 ```
 
 ## Markup
@@ -30,7 +30,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ul class="o-list@sm">
+<ul class="o-list@md">
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>

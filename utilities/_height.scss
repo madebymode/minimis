@@ -11,7 +11,7 @@ category: Utilities
 @include u-height('50vh', 50vh);
 
 // Responsive
-@include u-height('50vh', 50vh, 'sm');
+@include u-height('50vh', 50vh, 'md');
 ```
 
 ## Markup
@@ -25,7 +25,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<img class="u-height-50vh@sm" src="http://placehold.it/200/ff0000/ffffff?text=1" width="200" height="200" alt="Item 1">
+<img class="u-height-50vh@md" src="http://placehold.it/200/ff0000/ffffff?text=1" width="200" height="200" alt="Item 1">
 ```
 */
 

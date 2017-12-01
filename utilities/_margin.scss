@@ -13,7 +13,7 @@ Directions: null, `vertical`, `horizontal`, `top`, `right`, `bottom`, `left`.
 @include u-margin('horizontal-auto', auto);
 
 // Responsive
-@include u-margin('horizontal-auto', auto, 'sm');
+@include u-margin('horizontal-auto', auto, 'md');
 ```
 
 ## Markup
@@ -27,7 +27,7 @@ Directions: null, `vertical`, `horizontal`, `top`, `right`, `bottom`, `left`.
 ### Responsive
 
 ```html_example
-<img class="u-margin-horizontal-auto@sm" src="http://placehold.it/100/ff0000/ffffff?text=1" width="100" height="100" alt="Item 1">
+<img class="u-margin-horizontal-auto@md" src="http://placehold.it/100/ff0000/ffffff?text=1" width="100" height="100" alt="Item 1">
 ```
 */
 

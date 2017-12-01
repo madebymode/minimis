@@ -11,7 +11,7 @@ category: Utilities
 @include u-font-family('display', $font-family--display);
 
 // Responsive
-@include u-font-family('display', $font-family--display, 'sm');
+@include u-font-family('display', $font-family--display, 'md');
 ```
 
 ## Markup
@@ -25,7 +25,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<p class="u-font-family-display@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<p class="u-font-family-display@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 */
 

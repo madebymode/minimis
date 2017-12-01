@@ -11,7 +11,7 @@ category: Utilities
 @include u-overflow('hidden');
 
 // Responsive
-@include u-overflow('hidden', 'sm');
+@include u-overflow('hidden', 'md');
 ```
 
 ## Markup
@@ -27,7 +27,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<div class="u-width-100  /  u-overflow-hidden@sm">
+<div class="u-width-100  /  u-overflow-hidden@md">
   <img src="http://placehold.it/200/ff0000/ffffff?text=1" width="200" height="200" alt="Item 1">
 </div>
 ```

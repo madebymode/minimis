@@ -11,7 +11,7 @@ category: Objects
 @include o-section();
 
 // Responsive
-@include o-section('sm');
+@include o-section('md');
 ```
 
 ## Markup
@@ -28,7 +28,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<section class="o-section@sm">
+<section class="o-section@md">
   <h4>Lorem ipsum</h4>
   <p>Dolor sit amet, consectetur adipisicing elit.</p>
 </section>

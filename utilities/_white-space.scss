@@ -11,7 +11,7 @@ category: Utilities
 @include u-white-space('nowrap');
 
 // Responsive
-@include u-white-space('nowrap', 'sm');
+@include u-white-space('nowrap', 'md');
 ```
 
 ## Markup
@@ -27,7 +27,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<p class="u-white-space-nowrap@sm">
+<p class="u-white-space-nowrap@md">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam velit, molestias hic. Numquam rerum eum, quae! Quod voluptate tempore aut, molestias! Aut atque, quis animi ab fugiat. Eveniet, nam ducimus.
 </p>
 ```

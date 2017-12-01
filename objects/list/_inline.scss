@@ -11,7 +11,7 @@ category: Objects
 @include o-list--inline();
 
 // Responsive
-@include o-list--inline('sm');
+@include o-list--inline('md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ul class="o-list  o-list--inline@sm">
+<ul class="o-list  o-list--inline@md">
   <li class="o-list__item">Lorem</li>
   <li class="o-list__item">Ipsum</li>
   <li class="o-list__item">Dolor</li>

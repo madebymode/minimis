@@ -11,7 +11,7 @@ category: Objects
 @include o-list--comma();
 
 // Responsive
-@include o-list--comma('sm');
+@include o-list--comma('md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ul class="o-list  o-list--comma@sm">
+<ul class="o-list  o-list--comma@md">
   <li class="o-list__item">Lorem</li>
   <li class="o-list__item">Ipsum</li>
   <li class="o-list__item">Dolor</li>

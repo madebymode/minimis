@@ -11,7 +11,7 @@ category: Utilities
 @include u-vertical-align('middle');
 
 // Responsive
-@include u-vertical-align('middle', 'sm');
+@include u-vertical-align('middle', 'md');
 ```
 
 ## Markup
@@ -28,7 +28,7 @@ category: Utilities
 
 ```html_example
 <p>
-  Lorem ipsum dolor sit amet <img class="u-display-inline-block  /  u-vertical-align-middle@sm" src="http://placehold.it/100/ff0000/ffffff?text=1" width="50" height="50" alt="Item 1"> consectetur adipisicing elit.
+  Lorem ipsum dolor sit amet <img class="u-display-inline-block  /  u-vertical-align-middle@md" src="http://placehold.it/100/ff0000/ffffff?text=1" width="50" height="50" alt="Item 1"> consectetur adipisicing elit.
 </p>
 ```
 */

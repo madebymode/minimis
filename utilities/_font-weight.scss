@@ -12,8 +12,8 @@ category: Utilities
 @include u-font-weight('bold', bold);
 
 // Responsive
-@include u-font-weight('400', 400, 'sm');
-@include u-font-weight('bold', bold, 'sm');
+@include u-font-weight('400', 400, 'md');
+@include u-font-weight('bold', bold, 'md');
 ```
 
 ## Markup
@@ -22,14 +22,14 @@ category: Utilities
 
 ```html_example
 <h4 class="u-font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-<p class="u-font-weight-bold@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<p class="u-font-weight-bold@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 
 ### Responsive
 
 ```html_example
-<h4 class="u-font-weight-400@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-<p class="u-font-weight-bold@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<h4 class="u-font-weight-400@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<p class="u-font-weight-bold@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 */
 

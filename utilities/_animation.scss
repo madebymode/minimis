@@ -18,7 +18,7 @@ category: Utilities
 }
 
 // Responsive
-@include u-animation('fade-in-400ms', 400ms fade-in linear forwards, 'sm') {
+@include u-animation('fade-in-400ms', 400ms fade-in linear forwards, 'md') {
   opacity: 1;
 }
 ```
@@ -34,7 +34,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<img class="u-animation-fade-in-400ms@sm" src="http://placehold.it/100/ff0000/ffffff?text=1" width="100" height="100" alt="Item 1">
+<img class="u-animation-fade-in-400ms@md" src="http://placehold.it/100/ff0000/ffffff?text=1" width="100" height="100" alt="Item 1">
 ```
 */
 

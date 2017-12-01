@@ -11,7 +11,7 @@ category: Utilities
 @include u-text-align('center');
 
 // Responsive
-@include u-text-align('center', 'sm');
+@include u-text-align('center', 'md');
 ```
 
 ## Markup
@@ -25,7 +25,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<p class="u-text-align-center@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<p class="u-text-align-center@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 */
 

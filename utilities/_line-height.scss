@@ -11,7 +11,7 @@ category: Utilities
 @include u-line-height('0.8', 0.8);
 
 // Responsive
-@include u-line-height('0.8', 0.8, 'sm');
+@include u-line-height('0.8', 0.8, 'md');
 ```
 
 ## Markup
@@ -25,7 +25,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<p class="u-line-height-0.8@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita reprehenderit aspernatur, non ratione excepturi et quia recusandae repellendus natus, libero facilis doloremque sint inventore voluptatem, voluptatibus odio sapiente iste officiis.</p>
+<p class="u-line-height-0.8@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita reprehenderit aspernatur, non ratione excepturi et quia recusandae repellendus natus, libero facilis doloremque sint inventore voluptatem, voluptatibus odio sapiente iste officiis.</p>
 ```
 */
 

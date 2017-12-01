@@ -11,7 +11,7 @@ category: Utilities
 @include u-font-style('italic');
 
 // Responsive
-@include u-font-style('italic', 'sm');
+@include u-font-style('italic', 'md');
 ```
 
 ## Markup
@@ -25,7 +25,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<p class="u-font-style-italic@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<p class="u-font-style-italic@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 */
 

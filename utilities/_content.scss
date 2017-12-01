@@ -12,8 +12,8 @@ category: Utilities
 @include u-content-after('arrow-right', ' »');
 
 // Responsive
-@include u-content-before('arrow-left', '« ', 'sm');
-@include u-content-after('arrow-right', ' »', 'sm');
+@include u-content-before('arrow-left', '« ', 'md');
+@include u-content-after('arrow-right', ' »', 'md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<div class="u-content-before-arrow-left@sm  u-content-after-arrow-right@sm">
+<div class="u-content-before-arrow-left@md  u-content-after-arrow-right@md">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 </div>
 ```

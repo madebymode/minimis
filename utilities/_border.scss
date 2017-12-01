@@ -13,7 +13,7 @@ Directions: null, `vertical`, `horizontal`, `top`, `right`, `bottom`, `left`.
 @include u-border('top-gray-3', 1px solid $color-gray-3);
 
 // Responsive
-@include u-border('top-gray-3', 1px solid $color-gray-3, 'sm');
+@include u-border('top-gray-3', 1px solid $color-gray-3, 'md');
 ```
 
 ## Markup
@@ -27,7 +27,7 @@ Directions: null, `vertical`, `horizontal`, `top`, `right`, `bottom`, `left`.
 ### Responsive
 
 ```html_example
-<div class="u-border-top-gray-3@sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+<div class="u-border-top-gray-3@md">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 ```
 */
 

@@ -11,7 +11,7 @@ category: Objects
 @include o-list--bullet('', 1rem);
 
 // Responsive
-@include o-list--bullet('', 1rem, 'sm');
+@include o-list--bullet('', 1rem, 'md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ul class="o-list  o-list--bullet@sm">
+<ul class="o-list  o-list--bullet@md">
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>

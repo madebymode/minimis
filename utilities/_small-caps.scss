@@ -59,8 +59,8 @@ h6,
 .u-small-caps {
   @include u-small-caps;
 }
-.u-small-caps\@lt-sm {
-  @include mq('lt-sm') {
+.u-small-caps\@lt-md {
+  @include mq('lt-md') {
     @include u-small-caps;
   }
 }

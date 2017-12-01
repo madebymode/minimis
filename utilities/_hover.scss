@@ -15,7 +15,7 @@ category: Utilities
 }
 
 // Responsive
-@include u-hover('dim', 'is-active', 'sm') {
+@include u-hover('dim', 'is-active', 'md') {
   opacity: 0.6;
 }
 ```
@@ -31,7 +31,7 @@ category: Utilities
 ### Responsive
 
 ```html_example
-<img class="u-hover-dim@sm" src="http://placehold.it/100/ff0000/ffffff?text=1" width="100" height="100" alt="Item 1">
+<img class="u-hover-dim@md" src="http://placehold.it/100/ff0000/ffffff?text=1" width="100" height="100" alt="Item 1">
 ```
 */
 

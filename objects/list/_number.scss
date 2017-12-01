@@ -11,7 +11,7 @@ category: Objects
 @include o-list--number();
 
 // Responsive
-@include o-list--number('sm');
+@include o-list--number('md');
 ```
 
 ## Markup
@@ -29,7 +29,7 @@ category: Objects
 ### Responsive
 
 ```html_example
-<ol class="o-list  o-list--number@sm">
+<ol class="o-list  o-list--number@md">
   <li class="o-list__item"><span class="o-list__counter"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item"><span class="o-list__counter"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li class="o-list__item"><span class="o-list__counter"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
