@@ -85,10 +85,10 @@ category: Objects
         padding-left: $size;
       }
     } @else {
-      margin: -$size 0 0 -$size;
+      margin: (-$size) 0 0 (-$size);
 
       > .o-grid__item {
-        padding: -$size 0 0 -$size;
+        padding: $size 0 0 $size;
       }
     }
   }
