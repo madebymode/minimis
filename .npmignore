@@ -1,0 +1,12 @@
+docs/
+docs-src/
+hologram/
+hologram-templates/
+docs-styles.scss
+docs.scss
+Gemfile
+Gemfile.lock
+hologram_config.yml
+*.sublime-project
+*.sublime-workspace
+*.tgz
