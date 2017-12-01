@@ -52,6 +52,6 @@ category: Utilities
  */
 @mixin u-clearfix($at-breakpoint: null) {
   @include breakpoints('u-clearfix', $at-breakpoint) {
-    @include clearfix;
+    @include clearfix();
   }
 }
