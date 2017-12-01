@@ -109,8 +109,8 @@ code {
   max-width: 100%;
   padding: 0 0.25rem;
   background: $color-gray-4;
-  vertical-align: middle;
   word-break: break-word;
+  vertical-align: middle;
 }
 
 .codeBlock + h1 {
@@ -190,9 +190,9 @@ $sidebar-width   : 192;
 
   @include mq('lt-sidebar') {
     @include scroll();
+    z-index: 1; // Keep above `.highlight` on iOS
     padding: 1rem;
     background: $color-gray-4;
-    z-index: 1; // Keep above `.highlight` on iOS
   }
 
   @include mq('btwn-sm-and-sidebar') {
@@ -418,11 +418,12 @@ $sidebar-width   : 192;
   width: rem(20);
   height: rem(20);
   border-radius: rem(3);
+  opacity: 0.8;
   background: $color-gray-4;
   cursor: pointer;
-  opacity: 0.8;
 
   &::before {
+    content: '';
     display: block;
     position: absolute;
     top: 50%;
@@ -430,12 +431,11 @@ $sidebar-width   : 192;
     width: 0;
     height: 0;
     margin-top: -3px;
-    pointer-events: none;
     transform: translateY(-50%) translateX(-50%);
     border: solid transparent;
     border-width: 5px;
     border-bottom-color: $color-gray-2;
-    content: '';
+    pointer-events: none;
 
     @include mq('md') {
       margin-top: -4px;
@@ -458,7 +458,7 @@ $sidebar-width   : 192;
 // ------------------------------
 
 .Examples {
-  main[role="main"] {
+  main[role='main'] {
     max-width: rem(960);
   }
 }
