@@ -13,6 +13,7 @@ npm i minimis --save-dev
 ## 2. Copy starter kit
 
 ```
+mkdir -p resources/assets/sass/
 rsync -avz node_modules/minimis/starter-kit/ resources/assets/sass/
 ```
 
