@@ -1,0 +1,16 @@
+@include u-max-width('100', rem(100));
+@include u-max-width('640', rem(640));
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-max-width('100', rem(100), 'lt-md');
+@include u-max-width('640', rem(640), 'lt-md');
+
+// Min-width
+@include u-max-width('100', rem(100), 'md');
+@include u-max-width('640', rem(640), 'md');

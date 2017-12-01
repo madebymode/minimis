@@ -1,0 +1,22 @@
+@include u-background-color('white-1', $color-white-1);
+@include u-background-color('gray-1', $color-gray-1);
+@include u-background-color('gray-3', $color-gray-3);
+@include u-background-color('red-1', $color-red-1);
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-background-color('white-1', $color-white-1, 'lt-md');
+@include u-background-color('gray-1', $color-gray-1, 'lt-md');
+@include u-background-color('gray-3', $color-gray-3, 'lt-md');
+@include u-background-color('red-1', $color-red-1, 'lt-md');
+
+// Min-width
+@include u-background-color('white-1', $color-white-1, 'md');
+@include u-background-color('gray-1', $color-gray-1, 'md');
+@include u-background-color('gray-3', $color-gray-3, 'md');
+@include u-background-color('red-1', $color-red-1, 'md');

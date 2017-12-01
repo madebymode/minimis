@@ -1,0 +1,25 @@
+@include u-object-fit('cover', cover);
+@include u-object-fit('cover-100%', cover) {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-object-fit('cover', cover, 'lt-md');
+@include u-object-fit('cover-100%', cover, 'lt-md') {
+  width: 100%;
+  height: 100%;
+}
+
+// Min-width
+@include u-object-fit('cover', cover, 'md');
+@include u-object-fit('cover-100%', cover, 'md') {
+  width: 100%;
+  height: 100%;
+}

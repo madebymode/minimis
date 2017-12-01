@@ -1,0 +1,16 @@
+@include u-overflow('hidden');
+@include u-overflow('scroll');
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-overflow('hidden', 'lt-md');
+@include u-overflow('scroll', 'lt-md');
+
+// Min-width
+@include u-overflow('hidden', 'md');
+@include u-overflow('scroll', 'md');

@@ -1,0 +1,13 @@
+@include u-flex-wrap('wrap');
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-flex-wrap('wrap', 'lt-md');
+
+// Min-width
+@include u-flex-wrap('wrap', 'md');

@@ -1,0 +1,16 @@
+@include u-flex('0', 0);
+@include u-flex('1', 1);
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-flex('0', 0, 'lt-md');
+@include u-flex('1', 1, 'lt-md');
+
+// Min-width
+@include u-flex('0', 0, 'md');
+@include u-flex('1', 1, 'md');

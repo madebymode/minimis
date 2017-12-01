@@ -1,50 +1,13 @@
-# mode-sass
+# minimis
 
-## Install
+## Documentation
 
-```
-npm i --save mode-sass
-```
+Examples, install notes, and upgrade guides are [here on GitHub](https://madebymode.github.io/minimis).
 
-For [gulp](https://gulpjs.com/) build:
+## Inspiration
 
-```
-npm i --save-dev gulp gulp-sass npm-sass
-```
+- [BEMIT: Taking the BEM Naming Convention a Step Further](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/)
+- [ITCSS: Scalable and Maintainable CSS Architecture](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+- [inuitcss](https://github.com/inuitcss/inuitcss#css-directory-structure)
 
-## Sample `index.scss`
-
-```scss
-@import 'mode-sass';
-```
-
-## Sample `gulpfile.js`
-
-```js
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sassImporter = { importer: require('npm-sass').importer };
-
-// Sass
-gulp.task('sass', function () {
-  return gulp.src('./resources/assets/sass/**/*.scss')
-    .pipe(sass(sassImporter))
-    .pipe(gulp.dest('./public/css'));
-});
-gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
-});
-
-// Default
-gulp.task('default', ['sass']);
-```
-
-## [stylelint](http://stylelint.io/)
-
-To keep your Sass clean:
-
-```
-npm i --save-dev stylelint-config-property-sort-order-smacss
-cp node_modules/mode-sass/.editorconfig .editorconfig
-cp node_modules/mode-sass/.stylelintrc .stylelintrc
-```
+Special thanks to [Harry Roberts](https://twitter.com/csswizardry).

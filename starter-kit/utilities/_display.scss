@@ -1,0 +1,28 @@
+@include u-display('inline-block');
+@include u-display('block');
+@include u-display('inline-flex');
+@include u-display('flex');
+@include u-display('none');
+@include u-visually-hidden();
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-display('inline-block', 'lt-md');
+@include u-display('block', 'lt-md');
+@include u-display('inline-flex', 'lt-md');
+@include u-display('flex', 'lt-md');
+@include u-display('none', 'lt-md');
+@include u-visually-hidden('lt-md');
+
+// Min-width
+@include u-display('inline-block', 'md');
+@include u-display('block', 'md');
+@include u-display('inline-flex', 'md');
+@include u-display('flex', 'md');
+@include u-display('none', 'md');
+@include u-visually-hidden('md');

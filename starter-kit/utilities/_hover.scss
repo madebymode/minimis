@@ -1,0 +1,19 @@
+@include u-hover('dim', 'is-active') {
+  opacity: 0.6;
+}
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-hover('dim', 'is-active', 'lt-md') {
+  opacity: 0.6;
+}
+
+// Min-width
+@include u-hover('dim', 'is-active', 'md') {
+  opacity: 0.6;
+}

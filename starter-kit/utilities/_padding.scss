@@ -1,0 +1,19 @@
+// Directions: null, `vertical`, `horizontal`, `top`, `right`, `bottom`, `left`
+
+@include u-padding('horizontal-xs', $gutter-xs);
+@include u-padding('horizontal-sm', $gutter-sm);
+@include u-padding('right-sm', $gutter-sm);
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-padding('horizontal-sm', $gutter-sm, 'lt-md');
+@include u-padding('right-sm', $gutter-sm, 'lt-md');
+
+// Min-width
+@include u-padding('horizontal-sm', $gutter-sm, 'md');
+@include u-padding('right-sm', $gutter-sm, 'md');

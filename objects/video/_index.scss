@@ -22,27 +22,10 @@ category: Objects
 ### Basic
 
 ```html_example
-<figure class="o-video  /  js-video-wrapper">
+<figure class="o-video">
   <div class="u-aspect-ratio-16x9"></div>
-  <div id="video" class="o-video__element  /  js-video" data-video='{
-    "url": "https://www.youtube.com/watch?v=0qo78R_yYFA"
-  }'></div>
+  <iframe class="o-video__element" src="https://www.youtube.com/embed/0qo78R_yYFA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </figure>
-```
-
-### Overlay
-
-```html_example
-<div class="o-video  o-video--overlay  /  js-video-wrapper">
-  <img src="./img/spacex-interplanetary-transport-system.jpg" width="1920" height="1080" alt="SpaceX Interplanetary Transport System">
-  <button class="o-video__play  /  u-position-center  /  js-video-open" type="button" data-video="#video-overlay">Play Video</button>
-  <figure class="o-video__wrapper">
-    <button class="o-video__close  /  js-video-close" type="button">Close</button>
-    <div id="video-overlay" class="o-video__element  /  js-video" data-video='{
-      "url": "https://www.youtube.com/watch?v=0qo78R_yYFA"
-    }'></div>
-  </figure>
-</div>
 ```
 */
 

@@ -1,0 +1,20 @@
+@include o-grid();
+@include o-grid__item();
+
+// Gutters
+@include o-grid--gutters('sm', $gutter-sm);
+@include o-grid--gutters('', $gutter);
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include o-grid('lt-md');
+@include o-grid--gutters('sm', $gutter-sm, 'lt-md');
+
+// Min-width
+@include o-grid('md');
+@include o-grid--gutters('sm', $gutter-sm, 'md');

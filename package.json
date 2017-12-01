@@ -1,5 +1,5 @@
 {
-  "name": "mode-sass",
+  "name": "minimis",
   "version": "0.1.2",
   "description": "",
   "main": "index.scss",
@@ -8,17 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/madebymode-devs/mode-sass.git"
+    "url": "git+https://github.com/madebymode-devs/minimis.git"
   },
   "author": "MODE <developers@madebymode.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/madebymode-devs/mode-sass/issues"
+    "url": "https://github.com/madebymode-devs/minimis/issues"
   },
-  "homepage": "https://github.com/madebymode-devs/mode-sass#readme",
+  "homepage": "https://github.com/madebymode-devs/minimis#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
     "normalize.css": "^7.0.0",
     "npm-sass": "^2.2.1",
     "stylelint-config-property-sort-order-smacss": "^2.0.0"

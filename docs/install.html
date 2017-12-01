@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Install | minimis</title>
+  <link rel="stylesheet" href="./css/docs.css">
+  <script src="https://use.typekit.net/bbx2hlj.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body id="top" class="c-layout  Install">
+  <header class="c-layout__wrapper" role="banner">
+    <h1 class="c-heading  c-heading--xl  /  u-text-align-center">
+      <a href="index.html" class="c-link--inherit">minimis</a>
+    </h1>
+    <nav class="u-margin-bottom-xs  /  u-border-right-gray-1@lt-sidebar  /  u-white-space-nowrap@lt-sidebar  /  u-scroll@lt-sidebar" role="navigation">
+      <ul class="o-list  o-list--inline  /  c-navigation  /  u-margin-bottom-0  /  u-text-align-center">
+        <li class="o-list__item  /  c-copy  /  u-margin-right-xs"><a href="index.html">Examples</a></li>
+        <li class="o-list__item  /  c-copy  /  u-margin-right-xs"><a href="install.html">Install</a></li>
+        <li class="o-list__item  /  c-copy  /  u-margin-right-xs"><a href="objects.html">Objects</a></li>
+        <li class="o-list__item  /  c-copy  /  u-margin-right-xs@lt-sidebar"><a href="utilities.html">Utilities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a href="#top" class="c-back-to-top"></a>
+
+  
+  
+  <nav class="c-layout__sticky-sidebar  /  c-sticky-sidebar  /  u-text-align-center@lt-sidebar">
+    <ul class="o-list  o-list--inline@lt-sidebar  /  c-sticky-sidebar__nav">
+      
+      <li class="o-list__item  /  c-copy  /  u-margin-right-xs@lt-sidebar"><a href="#install">Install</a></li>
+      
+      <li class="o-list__item  /  c-copy  /  "><a href="#upgrade">Upgrade</a></li>
+      
+    </ul>
+  </nav>
+
+  
+
+  <main class="c-layout__wrapper" role="main">
+<h1 id="install" class="styleguide">Install</h1>
+
+<h2>1. Install with <a class="styleguide" href="https://docs.npmjs.com/getting-started/what-is-npm" title="https://docs.npmjs.com/getting-started/what-is-npm">npm</a></h2>
+<div class="codeBlock">
+  <div class="highlight">
+    <pre>npm i minimis --save-dev</pre>
+  </div>
+</div>
+<h2>2. Copy starter kit</h2>
+<div class="codeBlock">
+  <div class="highlight">
+    <pre>rsync -avz node_modules/minimis/starter-kit/ resources/assets/sass/</pre>
+  </div>
+</div>
+<h2>3. Build with <a class="styleguide" href="https://gulpjs.com/" title="https://gulpjs.com/">gulp</a></h2>
+<div class="codeBlock">
+  <div class="highlight">
+    <pre>npm i gulp gulp-sass npm-sass gulp-sourcemaps gulp-autoprefixer gulp-clean-css --save-dev</pre>
+  </div>
+</div>
+<h3>Sample <code class="styleguide">gulpfile.js</code></h3>
+<div class="codeBlock">
+  <div class="highlight">
+    <pre>const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sassImporter = { importer: require('npm-sass').importer };
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+
+// Sass
+const SASS_SRC = ['./resources/assets/sass/*.scss'];
+const SASS_DEST = './public/css';
+
+gulp.task('sass', function() {
+  return gulp.src(SASS_SRC)
+    .pipe(sass(sassImporter))
+    .pipe(sourcemaps.init())
+    .pipe(autoprefixer())
+    .on('error', sass.logError)
+    .pipe(cleanCSS({ inline: ['none'], keepSpecialComments: 0 }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(SASS_DEST));
+});
+
+// Default
+gulp.task('default', ['sass']);
+
+// Watch
+gulp.task('watch', function() {
+  gulp.watch(SASS_SRC, ['sass']);
+});</pre>
+  </div>
+</div>
+<h2>4. Keep clean code with <a class="styleguide" href="http://editorconfig.org/" title="http://editorconfig.org/">EditorConfig</a> and <a class="styleguide" href="http://stylelint.io/" title="http://stylelint.io/">stylelint</a></h2>
+<div class="codeBlock">
+  <div class="highlight">
+    <pre>npm i stylelint-config-property-sort-order-smacss --save-dev
+cp node_modules/minimis/.editorconfig .editorconfig
+cp node_modules/minimis/.stylelintrc .stylelintrc</pre>
+  </div>
+</div>
+<h1 id="upgrade" class="styleguide">Upgrade</h1>
+
+<h2>Migrating from <a class="styleguide" href="https://github.com/madebymode/mode-front-end/tree/v2.11.1" title="https://github.com/madebymode/mode-front-end/tree/v2.11.1">mode-front-end 2.11.1</a> to minimis 0.1.x</h2>
+
+<h3>Replace <code class="styleguide">css-normalize()</code> mixin</h3>
+<p class="styleguide">Remove all <code class="styleguide">@include css-normalize();</code> references.</p><p class="styleguide">To replace it, either:</p><ul class="styleguide"><li>Copy <a class="styleguide" href="https://github.com/necolas/normalize.css/blob/3.0.3/normalize.css" title="https://github.com/necolas/normalize.css/blob/3.0.3/normalize.css">Normalize.css v3.0.3</a> and include it in your app styles.</li>
+<li>Install with npm and include it directly from <code class="styleguide">node_modules/</code>:
+<ul class="styleguide"><li><code class="styleguide">npm i normalize.css@3.0.3 --save-dev</code></li>
+<li>`@include &#39;node_modules/normalize.css/normalize.css&#39;</li>
+</ul></li>
+</ul>
+<h3>Replace <code class="styleguide">css-reset()</code> mixin</h3>
+<p class="styleguide">Remove all <code class="styleguide">@include css-reset();</code> references.</p><p class="styleguide">To replace it, <a class="styleguide" href="https://github.com/madebymode/mode-front-end/blob/v2.11.1/resources/assets/sass/generic/_reset.scss" title="https://github.com/madebymode/mode-front-end/blob/v2.11.1/resources/assets/sass/generic/_reset.scss">mode-front-end v2.11.1’s _reset.scss</a> and include it in your app styles.</p>
+<h3>Added directional aliases to <code class="styleguide">o-grid--gutters()</code>:</h3>
+<p class="styleguide">Update all <code class="styleguide">o-grid--gutters()</code> references so they include a <code class="styleguide">horizontal-</code> prefix:</p><p class="styleguide">For example, <code class="styleguide">@o-grid--gutters(&#39;sm&#39;);</code> becomes <code class="styleguide">@o-grid--gutters(&#39;horizontal-sm&#39;);</code>.</p>    <footer class="u-margin-top-xl">
+      <p class="c-copy">This documentation generated using <a href="http://github.com/trulia/hologram" class="c-link">Hologram</a>.
+    </footer>
+  </main>
+</body>
+</html>

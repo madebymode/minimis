@@ -1,0 +1,13 @@
+@include u-min-width('200', rem(200));
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-min-width('200', rem(200), 'lt-md');
+
+// Min-width
+@include u-min-width('200', rem(200), 'md');

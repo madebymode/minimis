@@ -1,0 +1,16 @@
+@include u-font-size('100%', 100%);
+@include u-font-size('heading', 1.5rem);
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-font-size('100%', 100%, 'lt-md');
+@include u-font-size('heading', 1.5rem, 'lt-md');
+
+// Min-width
+@include u-font-size('100%', 100%, 'md');
+@include u-font-size('heading', 1.5rem, 'md');

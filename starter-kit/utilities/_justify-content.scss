@@ -1,0 +1,16 @@
+@include u-justify-content('center');
+@include u-justify-content('space-between');
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-justify-content('center', 'lt-md');
+@include u-justify-content('space-between', 'lt-md');
+
+// Min-width
+@include u-justify-content('center', 'md');
+@include u-justify-content('space-between', 'md');

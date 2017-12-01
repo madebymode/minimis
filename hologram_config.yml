@@ -1,0 +1,17 @@
+source:
+  - ./docs-src
+  - ./settings
+  - ./core
+  - ./tools
+  - ./generic
+  - ./objects
+  - ./utilities
+destination: ./docs
+documentation_assets: ./hologram
+code_example_templates: ./hologram-templates
+code_example_renderers: ./hologram-renderers
+index: examples
+nav_level: all
+custom_extensions:
+  - '.md'
+exit_on_warnings: false

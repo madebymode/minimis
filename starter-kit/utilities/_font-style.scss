@@ -1,0 +1,13 @@
+@include u-font-style('italic');
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-font-style('italic', 'lt-md');
+
+// Min-width
+@include u-font-style('italic', 'md');

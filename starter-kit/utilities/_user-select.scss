@@ -1,0 +1,16 @@
+@include u-user-select('none');
+@include u-user-select('auto');
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-user-select('none', 'lt-md');
+@include u-user-select('auto', 'lt-md');
+
+// Min-width
+@include u-user-select('none', 'md');
+@include u-user-select('auto', 'md');

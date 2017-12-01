@@ -1,0 +1,40 @@
+@include o-list();
+@include o-list__item();
+
+@include o-list--border('', 1px solid $color-gray-3);
+@include o-list--bullet('', 1rem);
+@include o-list--comma();
+@include o-list--disc('', 1.125em);
+@include o-list--inline();
+@include o-list--leading-zero();
+@include o-list--number();
+@include o-list--roman();
+@include o-list--slash();
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include o-list--border('', 1px solid $color-gray-3, 'lt-md');
+@include o-list--bullet('', 1rem, 'lt-md');
+@include o-list--comma('lt-md');
+@include o-list--disc('', 1.125em, 'lt-md');
+@include o-list--inline('lt-md');
+@include o-list--leading-zero('lt-md');
+@include o-list--number('lt-md');
+@include o-list--roman('lt-md');
+@include o-list--slash('lt-md');
+
+// Min-width
+@include o-list--border('', 1px solid $color-gray-3, 'md');
+@include o-list--bullet('', 1rem, 'md');
+@include o-list--comma('md');
+@include o-list--disc('', 1.125em, 'md');
+@include o-list--inline('md');
+@include o-list--leading-zero('md');
+@include o-list--number('md');
+@include o-list--roman('md');
+@include o-list--slash('md');

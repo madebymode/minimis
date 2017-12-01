@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide | minimis</title>
+  <link rel="stylesheet" href="./css/docs.css">
+  <script src="https://use.typekit.net/bbx2hlj.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body id="top" class="c-layout  Style Guide">
+  <header class="c-layout__wrapper" role="banner">
+    <h1 class="c-heading  c-heading--xl  /  u-text-align-center">
+      <a href="index.html" class="c-link--inherit">minimis</a>
+    </h1>
+    <nav class="u-margin-bottom-xs  /  u-border-right-gray-1@lt-sidebar  /  u-white-space-nowrap@lt-sidebar  /  u-scroll@lt-sidebar" role="navigation">
+      <ul class="o-list  o-list--inline  /  c-navigation  /  u-margin-bottom-0  /  u-text-align-center">
+        <li class="o-list__item  /  c-copy  /  u-margin-right-xs"><a href="index.html">Examples</a></li>
+        <li class="o-list__item  /  c-copy  /  u-margin-right-xs"><a href="install.html">Install</a></li>
+        <li class="o-list__item  /  c-copy  /  u-margin-right-xs"><a href="objects.html">Objects</a></li>
+        <li class="o-list__item  /  c-copy  /  u-margin-right-xs@lt-sidebar"><a href="utilities.html">Utilities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a href="#top" class="c-back-to-top"></a>
+
+  
+
+  <main class="c-layout__wrapper" role="main">
+<h1 id="style_guide" class="styleguide">Style Guide</h1>
+
+<h2>Naming Conventions</h2>
+
+<h3><a class="styleguide" href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/" title="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/">BEMIT</a></h3>
+<p class="styleguide"><code class="styleguide">block__element--modifier@breakpoint</code></p>
+<h3><a class="styleguide" href="http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/" title="http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/">Namespaces</a></h3>
+<ul class="styleguide"><li><code class="styleguide">o-</code>   Object     : Generic styles that can be reused in multiple, unrelated contexts.</li>
+<li><code class="styleguide">u-</code>   Utility    : “A very specific role [that is] not tied to any specific piece of UI.”</li>
+<li><code class="styleguide">c-</code>   Component  : “A concrete, implementation-specific piece of UI.”</li>
+<li><code class="styleguide">t-</code>   Theme      : Use to affect the appearance of components.</li>
+<li><code class="styleguide">is-</code>,
+<code class="styleguide">has-</code> State      : “Temporary, optional, or short-lived style.”</li>
+<li> <code class="styleguide">_</code>   Hack       : The worst (hopefully temporary) styles.</li>
+<li><code class="styleguide">js-</code>  JavaScript : Use to bind behaviors to the DOM. (This makes for more flexible styling.)</li>
+<li><code class="styleguide">qa-</code>  QA         : Use to bind automated UI tests to the DOM. &quot;Basically just reserves hooks in the DOM for non-CSS purposes.&quot;</li>
+</ul>    <footer class="u-margin-top-xl">
+      <p class="c-copy">This documentation generated using <a href="http://github.com/trulia/hologram" class="c-link">Hologram</a>.
+    </footer>
+  </main>
+</body>
+</html>

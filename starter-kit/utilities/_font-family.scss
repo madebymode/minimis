@@ -1,0 +1,16 @@
+@include u-font-family('', $font-family);
+@include u-font-family('display', $font-family--display);
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include u-font-family('', $font-family, 'lt-md');
+@include u-font-family('display', $font-family--display, 'lt-md');
+
+// Min-width
+@include u-font-family('', $font-family, 'md');
+@include u-font-family('display', $font-family--display, 'md');
