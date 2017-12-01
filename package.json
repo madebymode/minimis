@@ -19,6 +19,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
+    "normalize.css": "^7.0.0",
     "npm-sass": "^2.2.1",
     "stylelint-config-property-sort-order-smacss": "^2.0.0"
   }
