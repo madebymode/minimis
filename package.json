@@ -1,7 +1,7 @@
 {
   "name": "minimis",
   "version": "0.1.6",
-  "description": "An itcss-based framework for building flexible websites",
+  "description": "An itcss-based framework for building flexible websites.",
   "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

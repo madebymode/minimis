@@ -1,5 +1,7 @@
 # minimis
 
+An itcss-based framework for building flexible websites.
+
 ## Documentation
 
 Examples, install notes, and upgrade guides are [here on GitHub](https://madebymode.github.io/minimis).
