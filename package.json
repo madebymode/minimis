@@ -1,6 +1,6 @@
 {
   "name": "minimis",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "An itcss-based framework for building flexible websites.",
   "main": "index.scss",
   "scripts": {
