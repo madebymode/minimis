@@ -1,6 +1,6 @@
 ---
 title: Responsive Grid
-name: responsive-grid-1
+name: 2-responsive-grid-1
 category: Examples
 hologram: true
 ---

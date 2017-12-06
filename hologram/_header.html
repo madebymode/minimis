@@ -27,7 +27,6 @@
   <a href="#top" class="c-back-to-top"></a>
 
   <% if @blocks.size > 1 %>
-  <% @blocks.sort! { |a, b| a[:title] <=> b[:title] } %>
   <nav class="c-layout__sticky-sidebar  /  c-sticky-sidebar  /  u-text-align-center@lt-sidebar">
     <ul class="o-list  o-list--inline@lt-sidebar  /  c-sticky-sidebar__nav">
       <% @blocks.each do |b| %>
@@ -35,7 +34,6 @@
       <% end %>
     </ul>
   </nav>
-
   <% end %>
 
   <main class="c-layout__wrapper" role="main">

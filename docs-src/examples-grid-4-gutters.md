@@ -1,6 +1,6 @@
 ---
-title: 'Responsive Grid 4: Gutters'
-name: responsive-grid-4-gutters
+title: 'Responsive Grid: Gutters'
+name: 5-responsive-grid-gutters
 category: Examples
 hologram: true
 ---

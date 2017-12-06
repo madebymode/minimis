@@ -1,6 +1,6 @@
 ---
-title: 'Responsive Grid 2: Sidebar'
-name: responsive-grid-2-sidebar
+title: 'Responsive Grid: Sidebar'
+name: 3-responsive-grid-sidebar
 category: Examples
 hologram: true
 ---

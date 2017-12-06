@@ -1,6 +1,6 @@
 ---
-title: 'Responsive Grid 3: Partial Sidebar'
-name: responsive-grid-3-partial-sidebar
+title: 'Responsive Grid: Partial Sidebar'
+name: 4-responsive-grid-partial-sidebar
 category: Examples
 hologram: true
 ---
