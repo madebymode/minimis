@@ -20,7 +20,7 @@ rsync -avz node_modules/minimis/starter-kit/ resources/assets/sass/
 ## 3. Build with [gulp](https://gulpjs.com/)
 
 ```js_example
-npm i gulp gulp-sass npm-sass gulp-sourcemaps gulp-autoprefixer gulp-clean-css --save-dev
+npm i gulp gulp-autoprefixer gulp-clean-css gulp-sass gulp-sourcemaps npm-sass --save-dev
 ```
 
 ### Sample `gulpfile.js`
