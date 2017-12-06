@@ -60,6 +60,7 @@ gulp.task('watch', function() {
 ## 4. <small class="optional">Optional</small> Keep clean code with [EditorConfig](http://editorconfig.org/) and [stylelint](http://stylelint.io/)
 
 ```js_example
+npm i -g stylelint
 npm i stylelint-config-property-sort-order-smacss --save-dev
 cp node_modules/minimis/.editorconfig .editorconfig
 cp node_modules/minimis/.stylelintrc .stylelintrc
