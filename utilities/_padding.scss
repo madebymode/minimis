@@ -8,7 +8,7 @@ Directions: null, `vertical`, `horizontal`, `top`, `right`, `bottom`, `left`.
 
 ## Sass
 
-```scss
+```js_example
 // Basic
 @include u-padding('horizontal-sm', $gutter-sm);
 

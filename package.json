@@ -1,7 +1,7 @@
 {
   "name": "minimis",
   "version": "0.1.5",
-  "description": "",
+  "description": "An itcss-based framework for building flexible websites",
   "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,13 +17,21 @@
   },
   "homepage": "https://github.com/madebymode-devs/minimis#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "core-js": "^2.5.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.9.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
+    "highlight.js": "^9.12.0",
     "normalize.css": "^7.0.0",
     "npm-sass": "^2.2.1",
-    "stylelint-config-property-sort-order-smacss": "^2.0.0"
+    "stylelint-config-property-sort-order-smacss": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^4.0.0"
   }
 }

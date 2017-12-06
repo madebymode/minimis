@@ -10,7 +10,7 @@ Values: `fill`, `contain`, `cover`, `none`, `scale-down`.
 
 ## Sass
 
-```scss
+```js_example
 // Basic
 @include u-object-fit('cover', cover);
 @include u-object-fit('cover-100%', cover) {

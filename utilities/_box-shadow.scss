@@ -6,7 +6,7 @@ category: Utilities
 ---
 ## Sass
 
-```scss
+```js_example
 // Basic
 @include u-box-shadow('down-black-1', 0 2px 5px rgba($color-black-1, 0.1));
 

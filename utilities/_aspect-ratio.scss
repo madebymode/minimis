@@ -6,7 +6,7 @@ category: Utilities
 ---
 ## Sass
 
-```scss
+```js_example
 // Basic
 @include u-aspect-ratio(3, 1);
 @include u-aspect-ratio(16, 9);

@@ -6,7 +6,7 @@ category: Utilities
 ---
 ## Sass
 
-```scss
+```js_example
 // Basic
 @include u-width('1/1', percentage(1 / 1));
 @include u-width('1/2', percentage(1 / 2));

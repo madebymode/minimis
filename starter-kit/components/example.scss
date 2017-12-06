@@ -1,2 +1,24 @@
-.c-example {
+/**
+ * Example component: sticky sidebar.
+ * @param  {String}  $at-breakpoint
+ */
+@mixin c-sticky-sidebar($at-breakpoint: null) {
+  @include breakpoints('c-sticky-sidebar', $at-breakpoint) {
+    position: sticky;
+    bottom: 0;
+  }
 }
+
+@include c-sticky-sidebar();
+
+
+
+// ------------------------------
+// Responsive
+// ------------------------------
+
+// Max-width
+@include c-sticky-sidebar('lt-md');
+
+// Min-width
+@include c-sticky-sidebar('md');

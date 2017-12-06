@@ -8,7 +8,7 @@ category: Utilities
 
 ## Sass
 
-```scss
+```js_example
 // Basic
 @include u-hover('dim', 'is-active') {
   opacity: 0.6;

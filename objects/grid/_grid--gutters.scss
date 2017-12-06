@@ -8,7 +8,7 @@ category: Objects
 
 ## Sass
 
-```scss
+```js_example
 // Basic
 @include o-grid--gutters('sm', $gutter-sm);
 
@@ -69,12 +69,12 @@ category: Objects
   // Set properties based on direction
   @include breakpoints($class-name, $at-breakpoint) {
     @if ($direction == 'vertical') {
-      margin-bottom: 0;
       margin-top: -$size;
+      margin-bottom: 0;
 
       > .o-grid__item {
-        padding-bottom: 0;
         padding-top: $size;
+        padding-bottom: 0;
       }
     } @else if ($direction == 'horizontal') {
       margin-right: 0;
