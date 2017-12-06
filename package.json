@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/madebymode-devs/minimis/issues"
   },
-  "homepage": "https://github.com/madebymode-devs/minimis#readme",
+  "homepage": "https://madebymode.github.io/minimis/",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
