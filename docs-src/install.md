@@ -37,7 +37,7 @@ const cleanCSS = require('gulp-clean-css');
 const SASS_SRC = ['./resources/assets/sass/*.scss'];
 const SASS_DEST = './public/css';
 
-gulp.task('sass', function() {
+gulp.task('styles', function() {
   return gulp.src(SASS_SRC)
     .pipe(sass(sassImporter))
     .pipe(sourcemaps.init())
@@ -49,11 +49,11 @@ gulp.task('sass', function() {
 });
 
 // Default
-gulp.task('default', ['sass']);
+gulp.task('default', ['styles']);
 
 // Watch
 gulp.task('watch', function() {
-  gulp.watch(SASS_SRC, ['sass']);
+  gulp.watch(SASS_SRC, ['styles']);
 });
 ```
 
